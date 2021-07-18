@@ -1,0 +1,115 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+div.avatar {
+  width: 100px;
+}
+
+div.avatar > img {
+  border-radius: 25px;
+}
+
+img {
+  width: inherit;
+}
+
+div.about > p {
+  text-align: center;
+}
+
+div.about > p.name {
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+div.about > p.place {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+div.three-box {
+  display: flex;
+  max-width: 400px;
+}
+
+div.gray-box {
+  box-sizing: border-box;
+  background-color: lightgray;
+  width: 150px;
+  text-align: center;
+  border-radius: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+div.gray-box > p.heading {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+div.gray-box > p.text {
+  font-weight: 200;
+}
+div.image-grid {
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  margin-top: 20px;
+  display: grid;
+  gap: 0.7em;
+  width: 100%;
+  max-width: 900px;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.image {
+  border-radius: 12px;
+  box-shadow: 0px 13px 4px -9px rgba(153, 79, 79, 0.04);
+}
+
+.image-1 {
+  grid-column: 1/2;
+  grid-row: 1;
+}
+
+.image-2 {
+  grid-column: 2/4;
+  grid-row: 1;
+}
+
+.image-3 {
+  grid-column: 1/3;
+  grid-row: 2;
+}
+
+.image-4 {
+  grid-column: 3/4;
+  grid-row: 2/-1;
+}
+
+.image-5 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.image-6 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+footer {
+  box-sizing: border-box;
+  margin-top: 50px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+a {
+  color: black;
+}
